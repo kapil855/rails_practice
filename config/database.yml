@@ -6,8 +6,11 @@ default: &default
   password: 123456
   host: localhost
   port: 5432
-  timeout: 5000
-
+  
 development: 
   <<: *default
-  database: student_dev  
+  database:question_development  
+
+production:
+  <<: *default
+  database: question_production
