@@ -57,9 +57,9 @@ class QuestionsController < ApplicationController
   end
 
   # return all questions created tomorrow
-  def tomorrow
-    @questions = Question.tomorrow_questions
-  end
+  #def tomorrow
+  #  @questions = Question.tomorrow_questions
+  #end
 
   private
     # Use callbacks to share common setup or constraints between actions.
