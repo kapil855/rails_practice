@@ -9,8 +9,9 @@ default: &default
   
 development: 
   <<: *default
-  database:question_development  
+  database: question_development 
 
-production:
+
+production: 
   <<: *default
-  database: question_production
+  database: question_production 

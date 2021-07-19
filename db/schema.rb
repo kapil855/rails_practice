@@ -58,28 +58,6 @@ ActiveRecord::Schema.define(version: 2021_07_13_034204) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "students", force: :cascade do |t|
-    t.string "first_name"
-    t.string "middle_name"
-    t.string "last_name"
-    t.string "email"
-    t.string "gender"
-    t.date "date_of_birth"
-    t.string "contact_no"
-    t.string "qualification"
-    t.string "passout_pursuing"
-    t.date "date_of_joining"
-    t.string "course"
-    t.string "address"
-    t.string "address2"
-    t.string "city"
-    t.string "state"
-    t.string "pincode"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.text "student_details"
-  end
-
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
 end
