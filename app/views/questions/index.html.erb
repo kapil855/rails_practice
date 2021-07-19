@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+<h1 class="bg-primary py-3 text-white text-center rounded">Questions</h1>
+<% @questions.each do |question| %>
+  <div class="card shadow">
+    <div class="card-body">
+      <%= question.title %>
+      <%= link_to 'View Answer', question, class: 'btn btn-primary mt-3' %>
+      <%#= link_to 'Edit', edit_question_path(question), class: 'btn btn-primary ml-4' %>
+      <%#= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-primary ml-4' %>
+    </div>
+  </div><br>
+<% end %>
+<%= link_to 'New Question', new_question_path, class: 'btn btn-primary mt-4 mb-4' %>
+
+
+
+
